@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KRDS themplate</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="페이지 제목" />
+        <meta property="og:description" content="페이지 설명" />
+        <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+        <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="페이지 제목" />
+        <meta name="twitter:description" content="페이지 설명" />
+        <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+        <meta name="twitter:domain" content="사이트 명" />
+        <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../resources/css/pattern_css.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script defer src="../resources/js/include.js"></script>
+        <script defer src="../resources/js/ui-pattern.js"></script>
+        <script defer src="../resources/js/ui-swiper.js"></script>
+    </head>
+    <body>
+        <div id="skip-nav">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <div id="wrap">
+            <header id="header" class="">
+                <div class="inner">
+                    <h1 id="logo">
+                        <a href="#">
+                            <span>logo</span>
+                        </a>
+                    </h1>
+                    <nav id="gnb" class="gnb">
+                        <ul class="gnb__depth1">
+                            <li>
+                                <a href="#">
+                                    <span>menu1</span>
+                                </a>
+                                <ul class="gnb__depth2">
+                                    <li><a href="#">menu1-1</a></li>
+                                    <li><a href="#">menu1-2</a></li>
+                                    <li><a href="#">menu1-3</a></li>
+                                    <li><a href="#">menu1-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>menu2</span></a>
+                                <ul class="gnb__depth2">
+                                    <li><a href="#">menu2-1</a></li>
+                                    <li><a href="#">menu2-2</a></li>
+                                    <li><a href="#">menu2-3</a></li>
+                                    <li><a href="#">menu2-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>menu3</span></a>
+                                <ul class="gnb__depth2">
+                                    <li><a href="#">menu3-1</a></li>
+                                    <li><a href="#">menu3-2</a></li>
+                                    <li><a href="#">menu3-3</a></li>
+                                    <li><a href="#">menu3-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>menu4</span></a>
+                                <ul class="gnb__depth2">
+                                    <li><a href="#">menu4-1</a></li>
+                                    <li><a href="#">menu4-2</a></li>
+                                    <li><a href="#">menu4-3</a></li>
+                                    <li><a href="#">menu4-4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="util">
+                        <!-- active 추가시 활성화 -->
+                        <div class="lang">
+                            <button class="lang__btn">kor</button>
+                            <ul class="lang__lst">
+                                <li>kor</li>
+                                <li>eng</li>
+                            </ul>
+                        </div>
+                        <button class="search">
+                            <span class="blind">검색</span>
+                        </button>
+                        <button class="all-menu">
+                            <span class="blind">전체메뉴</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- active 추가시 활성화 -->
+                <nav id="nav-all" class="">
+                    <ul class="gnb__depth1">
+                        <li>
+                            <a href="#">
+                                <span>menu1</span>
+                            </a>
+                            <ul class="gnb__depth2">
+                                <li><a href="#">menu1-1</a></li>
+                                <li><a href="#">menu1-2</a></li>
+                                <li><a href="#">menu1-3</a></li>
+                                <li><a href="#">menu1-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>menu2</span></a>
+                            <ul class="gnb__depth2">
+                                <li><a href="#">menu2-1</a></li>
+                                <li><a href="#">menu2-2</a></li>
+                                <li><a href="#">menu2-3</a></li>
+                                <li><a href="#">menu2-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>menu3</span></a>
+                            <ul class="gnb__depth2">
+                                <li><a href="#">menu3-1</a></li>
+                                <li><a href="#">menu3-2</a></li>
+                                <li><a href="#">menu3-3</a></li>
+                                <li><a href="#">menu3-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>menu4</span></a>
+                            <ul class="gnb__depth2">
+                                <li><a href="#">menu4-1</a></li>
+                                <li><a href="#">menu4-2</a></li>
+                                <li><a href="#">menu4-3</a></li>
+                                <li><a href="#">menu4-4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <button class="close">
+                        <span class="">전체메뉴 닫기</span>
+                    </button>
+                </nav>
+            </header>
+            <div class="intro"><div class="inner">Cartier</div></div>
+            <main id="container">
+                <!-- trinity 섹션 -->
+                <section class="sec-g sec-cartier">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">Trinity</h2>
+                        <div class="sec-g__cont">
+                            <img src="../resources/images/component/common/TRINITY_STORIES.avif" alt="Trinity" />
+                            <strong
+                                >100th Anniversary of the
+                                <br />
+                                Birth of an Icon</strong
+                            >
+                        </div>
+                        <a href="https://www.cartier.com/ko-kr/jewellery/collections/trinity/" class="sec-g__more">SHOP THE COLLECTION</a>
+                    </div>
+                </section>
+
+                <!-- bestproduct섹션 -->
+                <section class="sec-g1v sec-cartier2">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">Best Product</h2>
+                        <p class="desc">
+                            The Perfect Suggestion
+                            <br />
+                            For Your Precious Moments
+                        </p>
+                        <div class="sec-g__cont">
+                            <ul>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/love/love-%EB%A7%81-CRB4084800.html">
+                                        <img src="../resources/images/component/common/lovering.avif" alt="LOVE ring" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/watches/all-collections/tank/%ED%83%B1%ED%81%AC-%EB%A3%A8%EC%9D%B4-%EA%B9%8C%EB%A5%B4%EB%9D%A0%EC%97%90-%EC%9B%8C%EC%B9%98-CRW1529856.html">
+                                        <img src="../resources/images/component/common/tankwatch1.avif" alt="Tank Louis Cartier Watch" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0-%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF-N6721317.html">
+                                        <img src="../resources/images/component/common/bracereal.avif" alt="Trinity Bracelet" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/%EC%8B%9C%EA%B3%84/%EC%BB%AC%EB%A0%89%EC%85%98/%EB%B2%A0%EB%88%84%EC%95%84/%EB%B2%A0%EB%88%84%EC%95%84-%EC%9B%8C%EC%B9%98-CRWJBA0031.html">
+                                        <img src="../resources/images/component/common/Benoit Watch.avif" alt="Benoit Watch" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Latest Collections 섹션 -->
+                <section class="sec-g sec-cartier3">
+                    <div class="inner">
+                        <h2 class="sec-g__tit ltc">
+                            Latest
+                            <br />
+                            Collections
+                        </h2>
+                        <div class="sec-g__cont">
+                            <ul>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/%ED%95%98%EC%9D%B4-%EC%A3%BC%EC%96%BC%EB%A6%AC/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%BB%AC%EB%A0%89%EC%85%98/%EB%82%98%EB%9B%B0%EB%A5%B4-%EC%86%8C%EB%B0%94%EC%A5%AC/">
+                                        <img src="../resources/images/component/common/nature-sauvage.webp" alt="nature-sauvage" />
+                                        <div class="txt-area">
+                                            <strong class="title"> Nature Sauvage</strong>
+                                            <p class="desc">
+                                                This High Jewelry collection reveals a new perspective of
+                                                <br />
+                                                Cartier fauna through transformative encounters.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/%ED%95%98%EC%9D%B4-%EC%A3%BC%EC%96%BC%EB%A6%AC/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%BB%AC%EB%A0%89%EC%85%98/%EB%A5%B4-%EB%B3%B4%EC%95%BC%EC%A3%BC-%EB%A0%88%EC%BD%94%EB%A7%9D%EC%8E%84/">
+                                        <img src="../resources/images/component/common/Le Voyage Recommencé.avif" class="img2" alt="Le Voyage Recommencé" />
+                                    </a>
+                                    <div class="txt-area">
+                                        <strong class="title">Le Voyage Recommencé</strong>
+                                        <p class="desc">
+                                            A High Jewelry collection from the Maison's Parisian ateliers,
+                                            <br />
+                                            Le Voyage Recommencé presents an ensemble of
+                                            <br />
+                                            unique creations that represent a journey into the heart of Cartier style.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/%ED%95%98%EC%9D%B4-%EC%A3%BC%EC%96%BC%EB%A6%AC/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%BB%AC%EB%A0%89%EC%85%98/%EB%B3%B4%EB%96%BC-%EB%91%90-%EB%AA%BD%EB%93%9C/">
+                                        <img src="../resources/images/component/common/BEAUTÉS DU MONDE.jpg" alt="Beautès Du Monde" />
+                                    </a>
+                                   <div class="txt-area">
+                                        <strong class="title">Beautès Du Monde</strong>
+                                        <p class="p3">
+                                            Seeing the beauty of the world, preserving it, and above all,
+                                            <br />
+                                            enriching it, are values that have continuously
+                                        </p>
+                                    </li>
+                                   </div>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/%ED%95%98%EC%9D%B4-%EC%A3%BC%EC%96%BC%EB%A6%AC/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%BB%AC%EB%A0%89%EC%85%98/%EC%97%A5%EB%8F%99%EB%94%B0%EB%B8%94-%EB%93%9C-%EA%B9%8C%EB%A5%B4%EB%9D%A0%EC%97%90/">
+                                        <img src="../resources/images/component/common/Engdongtable de Cartier.jpg" class="img4" alt="Engdongtable de Cartier" />
+                                    </a>
+                                   <div class="txt-area">
+                                        <strong class="title">Engdongtable de Cartier</strong>
+                                        <p class="p4">
+                                            For Engontable de Cartier, which uses Cartier's imagination
+                                            <br />
+                                            and know-how to expand its horizons, luxury is no problem.
+                                        </p>
+                                   </div>
+                                </li>
+                                <li>
+                                    <a href="https://www.cartier.com/ko-kr/%ED%95%98%EC%9D%B4-%EC%A3%BC%EC%96%BC%EB%A6%AC/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%BB%AC%EB%A0%89%EC%85%98/%EA%B9%8C%EB%A5%B4%EB%9D%A0%EC%97%90-%EC%94%A8%EC%A0%AC-%EC%8D%BD%EC%93%B0/">
+                                        <img src="../resources/images/component/common/Cartier Seegem Sensu Collection.jfif" class="img5" alt="Cartier Seegem Sensu Collection" />
+                                    </a>
+                                   <div class="txt-area">
+                                        <strong class="title">Cartier Seegem Sensu Collection</strong>
+                                        <p class="p5">
+                                            From surprise to wonder, the Cartier Seegem Sens
+                                            <br />
+                                            High Jewellery collection invites us into a world
+                                            <br />
+                                            that shakes our perception and awakens all our senses.
+                                        </p>
+                                   </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Partners 섹션 -->
+                <section class="sec-g sec-cartier4">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">Partners</h2>
+                        <div class="sec-g__cont">
+                            <ul>
+                                <li>
+                                    <a href="https://www.cartierwomensinitiative.com/">
+                                        <img src="../resources/images/component/common/CWI-Logo-black-424x190px.png" class="img4-1" alt="cartier women's initiative" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.fondationcartier.com/">
+                                        <img src="../resources/images/component/common/cartier_partner_logo_fondation.png" class="img4-2" alt="fondationcartier" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cartierphilanthropy.org/">
+                                        <img src="../resources/images/component/common/Philanthropy.png" class="img4-3" alt="Philanthropy" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer id="footer" include-html="./layout/footer.html"></footer>
+        </div>
+    </body>
+</html>
