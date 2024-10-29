@@ -36,12 +36,16 @@
         font-size: 15vw;
         font-weight: 400;
         line-height: 100%;
+        margin-bottom: 11px;
     }
     .sec-g__desc {
         font-weight: normal;
         font-size: 4vw;
         margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
+        @include tabletMore {
+            font-size: 20px;
+        }
     }
     img {
         border-radius: 18px;

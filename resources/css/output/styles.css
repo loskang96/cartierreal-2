@@ -678,12 +678,18 @@ img {
   font-size: 15vw;
   font-weight: 400;
   line-height: 100%;
+  margin-bottom: 11px;
 }
 .sec-cartier2 .sec-g__desc {
   font-weight: normal;
   font-size: 4vw;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+}
+@media (min-width: 1024px) {
+  .sec-cartier2 .sec-g__desc {
+    font-size: 20px;
+  }
 }
 .sec-cartier2 img {
   border-radius: 18px;
