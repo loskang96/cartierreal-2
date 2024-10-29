@@ -655,40 +655,35 @@ img {
   font-family: "Lora", sans-serif;
 }
 
-.sec-cartier h2 {
+.sec-cartier .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;
   margin-bottom: 41px;
 }
-.sec-cartier img {
+.sec-cartier .sec-g__cont .sec-g__img {
   border-radius: 18px;
   margin-bottom: 31px;
 }
-.sec-cartier strong {
+.sec-cartier .sec-g__cont .sec-g__desc {
   font-weight: normal;
-  font-size: 5vw;
-  font-optical-sizing: auto;
-  letter-spacing: 0px;
-  line-height: 170%;
-}
-.sec-cartier a {
   font-size: 4vw;
+}
+.sec-cartier .sec-g__more {
+  font-size: 3vw;
   margin-top: 36px;
   margin-bottom: 126px;
-  letter-spacing: 0px;
 }
 
-.sec-cartier2 h2 {
+.sec-cartier2 .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;
   line-height: 100%;
 }
-.sec-cartier2 p {
+.sec-cartier2 .sec-g__desc {
   font-weight: normal;
+  font-size: 4vw;
   margin-top: 20px;
   margin-bottom: 30px;
-  letter-spacing: 0px;
-  line-height: 170%;
 }
 .sec-cartier2 img {
   border-radius: 18px;
@@ -696,16 +691,17 @@ img {
   margin-bottom: 20px;
 }
 
-.sec-cartier3 h2 {
+.sec-cartier3 .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;
   line-height: 100%;
+  margin-bottom: 22px;
 }
-.sec-cartier3 li {
+.sec-cartier3 .lst-cartier3 li {
   position: relative;
   margin-bottom: 20px;
 }
-.sec-cartier3 img {
+.sec-cartier3 .lst-cartier3 li img {
   border-radius: 18px;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -719,46 +715,41 @@ img {
   bottom: 50px;
   margin-left: 10px;
 }
-.sec-cartier3 .txt-area strong {
+.sec-cartier3 .txt-area .title {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 23px;
+  font-size: 6vw;
   color: #fff;
-  letter-spacing: 0px;
-  line-height: 100%;
+  line-height: 130%;
   margin-bottom: 8px;
 }
-.sec-cartier3 .txt-area p {
-  font-size: 9px;
+.sec-cartier3 .txt-area .desc {
+  font-size: 2vw;
   font-weight: 300;
-  letter-spacing: 0px;
   line-height: 160%;
   color: #fff;
 }
 
-.sec-cartier4 h2 {
+.sec-cartier4 .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;
   line-height: 100%;
   margin-bottom: 25px;
 }
-.sec-cartier4 ul {
+.sec-cartier4 .swiper-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 100px;
 }
-.sec-cartier4 ul .img4-1 {
+.sec-cartier4 .swiper-wrapper .sec-g__img1 {
   width: 73px;
-  height: 33px;
 }
-.sec-cartier4 ul .img4-2 {
+.sec-cartier4 .swiper-wrapper .sec-g__img2 {
   width: 73px;
-  height: 18.42px;
 }
-.sec-cartier4 ul .img4-3 {
+.sec-cartier4 .swiper-wrapper .sec-g__img3 {
   width: 63.39px;
-  height: 23.84px;
 }/*# sourceMappingURL=styles.css.map */
