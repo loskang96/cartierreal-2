@@ -654,24 +654,54 @@ img {
   letter-spacing: -1px;
   font-family: "Lora", sans-serif;
 }
+@media (min-width: 600px) {
+  .intro {
+    font-size: 218px;
+    margin-top: 107px;
+    margin-bottom: 573px;
+  }
+}
 
 .sec-cartier .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;
   margin-bottom: 41px;
 }
+@media (min-width: 600px) {
+  .sec-cartier .sec-g__tit {
+    font-size: 119px;
+    margin-bottom: 59px;
+  }
+}
 .sec-cartier .sec-g__cont .sec-g__img {
   border-radius: 18px;
   margin-bottom: 31px;
+}
+@media (min-width: 600px) {
+  .sec-cartier .sec-g__cont .sec-g__img {
+    margin-bottom: 47px;
+  }
 }
 .sec-cartier .sec-g__cont .sec-g__desc {
   font-weight: normal;
   font-size: 4vw;
 }
+@media (min-width: 600px) {
+  .sec-cartier .sec-g__cont .sec-g__desc {
+    font-size: 31px;
+  }
+}
 .sec-cartier .sec-g__more {
   font-size: 3vw;
   margin-top: 36px;
   margin-bottom: 126px;
+}
+@media (min-width: 600px) {
+  .sec-cartier .sec-g__more {
+    font-size: 25px;
+    margin-top: 55px;
+    margin-bottom: 392px;
+  }
 }
 
 .sec-cartier2 .sec-g__tit {
@@ -680,21 +710,55 @@ img {
   line-height: 100%;
   margin-bottom: 11px;
 }
+@media (min-width: 600px) {
+  .sec-cartier2 .sec-g__tit {
+    font-size: 119px;
+    margin-bottom: 64px;
+  }
+}
 .sec-cartier2 .sec-g__desc {
   font-weight: normal;
   font-size: 4vw;
   margin-top: 20px;
   margin-bottom: 70px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .sec-cartier2 .sec-g__desc {
-    font-size: 20px;
+    font-size: 31px;
   }
 }
-.sec-cartier2 img {
+.sec-cartier2 .lst-cartier2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 600px) {
+  .sec-cartier2 .lst-cartier2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sec-cartier2 .lst-cartier2 li {
+    width: 45%;
+  }
+  .sec-cartier2 .lst-cartier2 li:nth-child(2n) a {
+    display: block;
+    margin-top: 158px;
+  }
+}
+.sec-cartier2 .lst-cartier2 .sec-g__img {
   border-radius: 18px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .sec-cartier2 .lst-cartier2 .sec-g__img {
+    height: 460px;
+  }
+}
+.sec-cartier2 .lst-cartier2 .sec-g__img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 460px;
 }
 
 .sec-cartier3 .sec-g__tit {
@@ -707,7 +771,7 @@ img {
   position: relative;
   margin-bottom: 20px;
 }
-.sec-cartier3 .lst-cartier3 li img {
+.sec-cartier3 .lst-cartier3 li .sec-g__img {
   border-radius: 18px;
   margin-top: 6px;
   margin-bottom: 6px;
