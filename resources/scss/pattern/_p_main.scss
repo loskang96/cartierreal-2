@@ -1,10 +1,13 @@
 // 사이트 컨텐츠 내용
-#wrap {
-    @include tabletMore {
-        margin-left: 210px;
-        margin-right: 210px;
+
+// HEADER
+#header {
+    @include ff-lora;
+    .lang__btn {
+        @include ff-lora;
     }
 }
+// MAIN
 .intro {
     font-size: 21vw;
     font-weight: 400;
@@ -13,12 +16,12 @@
     letter-spacing: -1px;
     @include ff-lora;
     @include mobileMore {
-        font-size: 218px;
+        font-size: 13.625rem;
         margin-top: 107px;
         margin-bottom: 573px;
     }
     @include tabletMore {
-        font-size: 270px;
+        font-size: 16.875rem;
         margin-top: 300px;
         margin-bottom: 35px;
     }
@@ -30,17 +33,26 @@
         font-weight: 400;
         margin-bottom: 25px;
         @include mobileMore {
-            font-size: 119px;
+            font-size: 7.4375rem;
             margin-bottom: 59px;
         }
         @include tabletMore {
-            font-size: 170px;
+            position: absolute;
+            top: -150px;
+            left: 0;
+            z-index: 10;
+            font-size: 12.5rem;
             margin-bottom: 0;
         }
     }
     .sec-g__cont {
         @include tabletMore {
             display: flex;
+            position: relative;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
         }
         .sec-g__img {
             border-radius: 18px;
@@ -49,6 +61,7 @@
                 margin-bottom: 47px;
             }
             @include tabletMore {
+                position: relative;
                 width: 1009px;
                 height: 665px;
             }
@@ -57,7 +70,10 @@
             font-weight: normal;
             font-size: 4vw;
             @include mobileMore {
-                font-size: 31px;
+                font-size: 1.9375rem;
+            }
+            @include tabletMore {
+                display: flex;
             }
         }
         .sec-g__more {
@@ -65,7 +81,7 @@
             margin-top: 15px;
             margin-bottom: 126px;
             @include mobileMore {
-                font-size: 25px;
+                font-size: 1.5625rem;
                 margin-top: 55px;
                 margin-bottom: 308px;
             }
@@ -84,8 +100,11 @@
         line-height: 100%;
         margin-bottom: 8px;
         @include mobileMore {
-            font-size: 119px;
+            font-size: 7.4375rem;
             margin-bottom: 61px;
+        }
+        @include tabletMore {
+            font-size: 12.5rem;
         }
     }
     .sec-g__desc {
@@ -96,7 +115,7 @@
         margin-bottom: 60px;
         @include mobileMore {
             display: block;
-            font-size: 31px;
+            font-size: 1.9375rem;
             padding-bottom: 20px;
         }
     }
@@ -124,12 +143,18 @@
             @include mobileMore {
                 height: 460px;
             }
+            @include tabletMore {
+                height: 700px;
+            }
         }
         .sec-g__img2 {
             border-radius: 18px;
             @include mobileMore {
                 object-fit: cover;
                 height: 460px;
+            }
+            @include tabletMore {
+                height: 700px;
             }
         }
     }
@@ -143,9 +168,14 @@
         margin-top: 87px;
         margin-bottom: 25px;
         @include mobileMore {
-            font-size: 119px;
+            font-size: 7.4375rem;
             margin-top: 308px;
             margin-bottom: 72px;
+        }
+        @include tabletMore {
+            font-size: 12.5rem;
+            margin-top: 0;
+            margin-bottom: 160px;
         }
     }
     .lst-cartier3 li {
@@ -159,6 +189,10 @@
                 margin-top: 12px;
                 margin-bottom: 12px;
             }
+            @include tabletMore {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -170,31 +204,41 @@
         top: 0;
         bottom: 50px;
         margin-left: 10px;
-        .title {
-            font-family: 'Montserrat', sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
-            font-size: 4.5vw;
-            color: #fff;
-            line-height: 130%;
-            margin-bottom: 8px;
-            @include mobileMore {
-                font-size: 35px;
-                margin-bottom: 16px;
-            }
+    }
+    .title {
+        font-family: 'Montserrat', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 4.5vw;
+        color: #fff;
+        line-height: 130%;
+        margin-bottom: 8px;
+        @include mobileMore {
+            font-size: 2.1875rem;
+            margin-bottom: 16px;
         }
-        .desc {
-            font-size: 2vw;
-            font-weight: 300;
-            line-height: 160%;
-            color: #fff;
-            @include mobileMore {
-                font-size: 18px;
-            }
+        @include tabletMore {
+            font-size: 3.125rem;
+            margin-bottom: 25px;
+        }
+    }
+    .desc {
+        font-size: 2vw;
+        font-weight: 300;
+        line-height: 160%;
+        color: #fff;
+        @include mobileMore {
+            font-size: 1.125rem;
+            margin-bottom: 60px;
+        }
+        @include tabletMore {
+            font-size: 1.875rem;
+            margin-bottom: 120px;
         }
     }
 }
+
 .sec-cartier4 {
     .sec-g__tit {
         font-size: 15vw;
@@ -203,9 +247,12 @@
         margin-top: 80px;
         margin-bottom: 40px;
         @include mobileMore {
-            font-size: 119px;
+            font-size: 7.4375rem;
             margin-top: 343px;
             margin-bottom: 80px;
+        }
+        @include tabletMore {
+            font-size: 12.5rem;
         }
     }
     .swiper-wrapper {
@@ -218,11 +265,17 @@
             @include mobileMore {
                 width: 144px;
             }
+            @include tabletMore {
+                width: 277px;
+            }
         }
         .sec-g__img2 {
             width: 73px;
             @include mobileMore {
                 width: 163px;
+            }
+            @include tabletMore {
+                width: 312px;
             }
         }
         .sec-g__img3 {
@@ -230,6 +283,34 @@
             @include mobileMore {
                 width: 122px;
             }
+            @include tabletMore {
+                width: 234px;
+            }
         }
     }
+}
+// FOOTER
+#footer {
+    background: #d50032;
+
+    .footer__contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .info {
+            font-size: 1.5vw;
+        }
+        .footer__img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    // .line {
+    //     position: absolute;
+    //     top: 10px;
+    //     left: 0;
+    //     right: 0;
+    //     border-top: 1px solid black;
+    //     width: 100%;
+    // }
 }

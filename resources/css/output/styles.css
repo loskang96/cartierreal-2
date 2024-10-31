@@ -330,19 +330,13 @@ img {
 .inner {
   position: relative;
   width: 100%;
-  max-width: 1340px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
   .inner {
     padding: 0 30px;
-  }
-}
-@media (min-width: 1024px) {
-  .inner {
-    margin: 0;
-    padding: 0;
   }
 }
 
@@ -405,7 +399,7 @@ img {
   left: 0;
   right: 0;
   height: 0;
-  background: #f8f8f8;
+  background: #ffffff;
   transition: all 0.3s;
 }
 #header .inner {
@@ -652,11 +646,11 @@ img {
   border-radius: 50%;
 }
 
-@media (min-width: 1024px) {
-  #wrap {
-    margin-left: 210px;
-    margin-right: 210px;
-  }
+#header {
+  font-family: "Lora", sans-serif;
+}
+#header .lang__btn {
+  font-family: "Lora", sans-serif;
 }
 
 .intro {
@@ -669,14 +663,14 @@ img {
 }
 @media (min-width: 600px) {
   .intro {
-    font-size: 218px;
+    font-size: 13.625rem;
     margin-top: 107px;
     margin-bottom: 573px;
   }
 }
 @media (min-width: 1024px) {
   .intro {
-    font-size: 270px;
+    font-size: 16.875rem;
     margin-top: 300px;
     margin-bottom: 35px;
   }
@@ -689,19 +683,28 @@ img {
 }
 @media (min-width: 600px) {
   .sec-cartier .sec-g__tit {
-    font-size: 119px;
+    font-size: 7.4375rem;
     margin-bottom: 59px;
   }
 }
 @media (min-width: 1024px) {
   .sec-cartier .sec-g__tit {
-    font-size: 170px;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    z-index: 10;
+    font-size: 12.5rem;
     margin-bottom: 0;
   }
 }
 @media (min-width: 1024px) {
   .sec-cartier .sec-g__cont {
     display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
   }
 }
 .sec-cartier .sec-g__cont .sec-g__img {
@@ -715,6 +718,7 @@ img {
 }
 @media (min-width: 1024px) {
   .sec-cartier .sec-g__cont .sec-g__img {
+    position: relative;
     width: 1009px;
     height: 665px;
   }
@@ -725,7 +729,12 @@ img {
 }
 @media (min-width: 600px) {
   .sec-cartier .sec-g__cont .sec-g__desc {
-    font-size: 31px;
+    font-size: 1.9375rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-cartier .sec-g__cont .sec-g__desc {
+    display: flex;
   }
 }
 .sec-cartier .sec-g__cont .sec-g__more {
@@ -735,7 +744,7 @@ img {
 }
 @media (min-width: 600px) {
   .sec-cartier .sec-g__cont .sec-g__more {
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin-top: 55px;
     margin-bottom: 308px;
   }
@@ -755,8 +764,13 @@ img {
 }
 @media (min-width: 600px) {
   .sec-cartier2 .sec-g__tit {
-    font-size: 119px;
+    font-size: 7.4375rem;
     margin-bottom: 61px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-cartier2 .sec-g__tit {
+    font-size: 12.5rem;
   }
 }
 .sec-cartier2 .sec-g__desc {
@@ -769,7 +783,7 @@ img {
 @media (min-width: 600px) {
   .sec-cartier2 .sec-g__desc {
     display: block;
-    font-size: 31px;
+    font-size: 1.9375rem;
     padding-bottom: 20px;
   }
 }
@@ -801,6 +815,11 @@ img {
     height: 460px;
   }
 }
+@media (min-width: 1024px) {
+  .sec-cartier2 .lst-cartier2 .sec-g__img {
+    height: 700px;
+  }
+}
 .sec-cartier2 .lst-cartier2 .sec-g__img2 {
   border-radius: 18px;
 }
@@ -809,6 +828,11 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 460px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-cartier2 .lst-cartier2 .sec-g__img2 {
+    height: 700px;
   }
 }
 
@@ -821,9 +845,16 @@ img {
 }
 @media (min-width: 600px) {
   .sec-cartier3 .sec-g__tit {
-    font-size: 119px;
+    font-size: 7.4375rem;
     margin-top: 308px;
     margin-bottom: 72px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-cartier3 .sec-g__tit {
+    font-size: 12.5rem;
+    margin-top: 0;
+    margin-bottom: 160px;
   }
 }
 .sec-cartier3 .lst-cartier3 li {
@@ -841,6 +872,12 @@ img {
     margin-bottom: 12px;
   }
 }
+@media (min-width: 1024px) {
+  .sec-cartier3 .lst-cartier3 li .sec-g__img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .sec-cartier3 .txt-area {
   display: flex;
   flex-direction: column;
@@ -850,7 +887,7 @@ img {
   bottom: 50px;
   margin-left: 10px;
 }
-.sec-cartier3 .txt-area .title {
+.sec-cartier3 .title {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -861,20 +898,33 @@ img {
   margin-bottom: 8px;
 }
 @media (min-width: 600px) {
-  .sec-cartier3 .txt-area .title {
-    font-size: 35px;
+  .sec-cartier3 .title {
+    font-size: 2.1875rem;
     margin-bottom: 16px;
   }
 }
-.sec-cartier3 .txt-area .desc {
+@media (min-width: 1024px) {
+  .sec-cartier3 .title {
+    font-size: 3.125rem;
+    margin-bottom: 25px;
+  }
+}
+.sec-cartier3 .desc {
   font-size: 2vw;
   font-weight: 300;
   line-height: 160%;
   color: #fff;
 }
 @media (min-width: 600px) {
-  .sec-cartier3 .txt-area .desc {
-    font-size: 18px;
+  .sec-cartier3 .desc {
+    font-size: 1.125rem;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-cartier3 .desc {
+    font-size: 1.875rem;
+    margin-bottom: 120px;
   }
 }
 
@@ -887,9 +937,14 @@ img {
 }
 @media (min-width: 600px) {
   .sec-cartier4 .sec-g__tit {
-    font-size: 119px;
+    font-size: 7.4375rem;
     margin-top: 343px;
     margin-bottom: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-cartier4 .sec-g__tit {
+    font-size: 12.5rem;
   }
 }
 .sec-cartier4 .swiper-wrapper {
@@ -906,12 +961,22 @@ img {
     width: 144px;
   }
 }
+@media (min-width: 1024px) {
+  .sec-cartier4 .swiper-wrapper .sec-g__img1 {
+    width: 277px;
+  }
+}
 .sec-cartier4 .swiper-wrapper .sec-g__img2 {
   width: 73px;
 }
 @media (min-width: 600px) {
   .sec-cartier4 .swiper-wrapper .sec-g__img2 {
     width: 163px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-cartier4 .swiper-wrapper .sec-g__img2 {
+    width: 312px;
   }
 }
 .sec-cartier4 .swiper-wrapper .sec-g__img3 {
@@ -921,4 +986,25 @@ img {
   .sec-cartier4 .swiper-wrapper .sec-g__img3 {
     width: 122px;
   }
+}
+@media (min-width: 1024px) {
+  .sec-cartier4 .swiper-wrapper .sec-g__img3 {
+    width: 234px;
+  }
+}
+
+#footer {
+  background: #d50032;
+}
+#footer .footer__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footer__contents .info {
+  font-size: 1.5vw;
+}
+#footer .footer__contents .footer__img {
+  width: 10px;
+  height: 10px;
 }/*# sourceMappingURL=styles.css.map */
