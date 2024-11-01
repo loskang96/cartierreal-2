@@ -11,19 +11,18 @@
 .intro {
     font-size: 21vw;
     font-weight: 400;
-    margin-top: 35px;
-    margin-bottom: 150px;
+    margin-top: 10%;
+    margin-bottom: 25%;
     letter-spacing: -1px;
     @include ff-lora;
     @include mobileMore {
-        font-size: 13.625rem;
-        margin-top: 107px;
-        margin-bottom: 573px;
+        font-size: 28vw;
+        margin-top: 15%;
+        margin-bottom: 60%;
     }
     @include tabletMore {
-        font-size: 16.875rem;
-        margin-top: 300px;
-        margin-bottom: 35px;
+        font-size: 15vw;
+        margin-bottom: 15%;
     }
 }
 
@@ -31,18 +30,17 @@
     .sec-g__tit {
         font-size: 15vw;
         font-weight: 400;
-        margin-bottom: 25px;
+        margin-bottom: 8%;
         @include mobileMore {
-            font-size: 7.4375rem;
-            margin-bottom: 59px;
+            font-size: 18vw;
+            margin-bottom: 3%;
         }
         @include tabletMore {
             position: absolute;
-            top: -150px;
-            left: 0;
+            top: -35%;
+            left: $p-mobile;
             z-index: 10;
-            font-size: 12.5rem;
-            margin-bottom: 0;
+            font-size: 10vw;
         }
     }
     .sec-g__cont {
@@ -52,42 +50,42 @@
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
-            position: relative;
         }
         .sec-g__img {
             border-radius: 18px;
-            margin-bottom: 31px;
+            margin-bottom: 10%;
+            object-fit: cover;
             @include mobileMore {
-                margin-bottom: 47px;
+                margin-bottom: 5%;
             }
             @include tabletMore {
                 position: relative;
-                width: 1009px;
-                height: 665px;
+                width: 63%;
+                height: 80vh;
+                margin-bottom: 0;
             }
         }
         .sec-g__desc {
             font-weight: normal;
             font-size: 4vw;
-            @include mobileMore {
-                font-size: 1.9375rem;
-            }
             @include tabletMore {
-                display: flex;
+                font-size: 2.6875rem;
             }
         }
         .sec-g__more {
             font-size: 3vw;
-            margin-top: 15px;
-            margin-bottom: 126px;
+            margin-top: 3%;
+            margin-bottom: 12%;
+            @include ff-lora;
             @include mobileMore {
-                font-size: 1.5625rem;
-                margin-top: 55px;
-                margin-bottom: 308px;
+                margin-bottom: 30%;
             }
             @include tabletMore {
-                margin-top: 0;
+                margin-top: 5%;
                 margin-bottom: 0;
+            }
+            @include tabletMore {
+                font-size: 2.5rem;
             }
         }
     }
@@ -98,63 +96,76 @@
         font-size: 15vw;
         font-weight: 400;
         line-height: 100%;
-        margin-bottom: 8px;
+        margin-bottom: 3%;
         @include mobileMore {
-            font-size: 7.4375rem;
-            margin-bottom: 61px;
+            margin-bottom: 5%;
         }
         @include tabletMore {
-            font-size: 12.5rem;
+            display: grid;
+            justify-content: end;
+            font-size: 10vw;
+            margin-bottom: 10%;
         }
     }
-    .sec-g__desc {
-        display: block;
-        font-weight: normal;
-        font-size: 4vw;
-        margin-top: 3px;
-        margin-bottom: 60px;
-        @include mobileMore {
-            display: block;
-            font-size: 1.9375rem;
-            padding-bottom: 20px;
-        }
-    }
-    .lst-cartier2 {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        @include mobileMore {
+    .sec-g__cont {
+        @include tabletMore {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
+            align-items: baseline;
             justify-content: space-between;
-            li {
-                width: 45%;
-                &:nth-child(2n) {
-                    a {
-                        display: block;
-                        margin-top: 158px;
+        }
+        .sec-g__desc {
+            display: block;
+            font-weight: normal;
+            font-size: 4vw;
+            margin-bottom: 15%;
+            @include mobileMore {
+                display: block;
+                margin-bottom: 10%;
+            }
+            @include tabletMore {
+                font-size: 2.6875rem;
+            }
+        }
+        .lst-cartier2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @include mobileMore {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                li {
+                    width: 45%;
+                    &:nth-child(2n) {
+                        a {
+                            display: block;
+                            margin-top: 45%;
+                        }
                     }
                 }
             }
-        }
-        .sec-g__img {
-            border-radius: 18px;
-            @include mobileMore {
-                height: 460px;
-            }
             @include tabletMore {
-                height: 700px;
+                max-width: 910px;
             }
-        }
-        .sec-g__img2 {
-            border-radius: 18px;
-            @include mobileMore {
-                object-fit: cover;
-                height: 460px;
+            .sec-g__img {
+                border-radius: 18px;
+                @include mobileMore {
+                    height: 460px;
+                }
+                @include tabletMore {
+                    height: 700px;
+                }
             }
-            @include tabletMore {
-                height: 700px;
+            .sec-g__img2 {
+                border-radius: 18px;
+                @include mobileMore {
+                    object-fit: cover;
+                    height: 460px;
+                }
+                @include tabletMore {
+                    height: 700px;
+                }
             }
         }
     }
@@ -165,45 +176,37 @@
         font-size: 15vw;
         font-weight: 400;
         line-height: 100%;
-        margin-top: 87px;
-        margin-bottom: 25px;
+        margin-top: 20%;
+        margin-bottom: 7%;
         @include mobileMore {
-            font-size: 7.4375rem;
-            margin-top: 308px;
-            margin-bottom: 72px;
+            margin-top: 35%;
         }
         @include tabletMore {
-            font-size: 12.5rem;
+            font-size: 10vw;
             margin-top: 0;
-            margin-bottom: 160px;
+            margin-bottom: 11%;
         }
     }
     .lst-cartier3 li {
         position: relative;
-        margin-bottom: 20px;
         .sec-g__img {
+            object-fit: cover;
             border-radius: 18px;
-            margin-top: 6px;
-            margin-bottom: 6px;
-            @include mobileMore {
-                margin-top: 12px;
-                margin-bottom: 12px;
-            }
+            margin-bottom: 7%;
             @include tabletMore {
-                margin-top: 20px;
-                margin-bottom: 20px;
+                width: 100%;
+                height: 100vh;
             }
         }
     }
-
     .txt-area {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         position: absolute;
         top: 0;
-        bottom: 50px;
-        margin-left: 10px;
+        bottom: 18%;
+        margin-left: 3%;
     }
     .title {
         font-family: 'Montserrat', sans-serif;
@@ -213,14 +216,9 @@
         font-size: 4.5vw;
         color: #fff;
         line-height: 130%;
-        margin-bottom: 8px;
-        @include mobileMore {
-            font-size: 2.1875rem;
-            margin-bottom: 16px;
-        }
+        margin-bottom: 3%;
         @include tabletMore {
-            font-size: 3.125rem;
-            margin-bottom: 25px;
+            font-size: 3.5vw;
         }
     }
     .desc {
@@ -228,13 +226,9 @@
         font-weight: 300;
         line-height: 160%;
         color: #fff;
-        @include mobileMore {
-            font-size: 1.125rem;
-            margin-bottom: 60px;
-        }
         @include tabletMore {
-            font-size: 1.875rem;
-            margin-bottom: 120px;
+            font-size: 1.5vw;
+            margin-bottom: 12%;
         }
     }
 }
@@ -244,48 +238,29 @@
         font-size: 15vw;
         font-weight: 400;
         line-height: 100%;
-        margin-top: 80px;
-        margin-bottom: 40px;
+        margin-top: 11%;
+        margin-bottom: 10%;
         @include mobileMore {
-            font-size: 7.4375rem;
-            margin-top: 343px;
-            margin-bottom: 80px;
+            margin-top: 23%;
         }
         @include tabletMore {
-            font-size: 12.5rem;
+            font-size: 10vw;
+            margin-top: 0;
         }
     }
     .swiper-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 100px;
+        margin-bottom: 5%;
         .sec-g__img1 {
-            width: 73px;
-            @include mobileMore {
-                width: 144px;
-            }
-            @include tabletMore {
-                width: 277px;
-            }
+            width: 30%;
         }
         .sec-g__img2 {
-            width: 73px;
-            @include mobileMore {
-                width: 163px;
-            }
-            @include tabletMore {
-                width: 312px;
-            }
+            width: 45%;
         }
         .sec-g__img3 {
-            width: 63.39px;
-            @include mobileMore {
-                width: 122px;
-            }
-            @include tabletMore {
-                width: 234px;
-            }
+            width: 35%;
         }
     }
 }
