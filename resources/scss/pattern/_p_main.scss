@@ -198,6 +198,16 @@
                 height: 100vh;
             }
         }
+        .sec-g__img4 {
+            object-fit: cover;
+            border-radius: 18px;
+            margin-bottom: 7%;
+            @include tabletMore {
+                width: 100%;
+                height: 100vh;
+                margin-bottom: 0;
+            }
+        }
     }
     .txt-area {
         display: flex;

@@ -886,6 +886,19 @@ img {
     height: 100vh;
   }
 }
+.sec-cartier3 .lst-cartier3 li .sec-g__img4 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 7%;
+}
+@media (min-width: 1024px) {
+  .sec-cartier3 .lst-cartier3 li .sec-g__img4 {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0;
+  }
+}
 .sec-cartier3 .txt-area {
   display: flex;
   flex-direction: column;
