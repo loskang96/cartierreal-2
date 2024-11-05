@@ -49,6 +49,16 @@
 #header {
     position: relative;
     z-index: 1000;
+    @include tabletMore {
+        width: 100%;
+        max-width: $grid;
+        margin: 0 auto;
+        padding: 0 $p-mobile;
+        @include tablet {
+            padding: 0 $p-tablet;
+        }
+    }
+
     &.active {
         &::before {
             height: 218px;
@@ -109,31 +119,31 @@
             position: relative;
             &:hover {
                 > a > span {
-                    color: $primary;
+                    color: $cartiercolor;
                     &::after {
                         width: 100%;
                     }
                 }
             }
-            &:first-child {
-                .gnb__depth2 {
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 1px;
-                        height: 100%;
-                        background: $gray-20;
-                    }
-                }
-            }
+            // &:first-child {
+            //     // .gnb__depth2 {
+            //     //     &::before {
+            //     //         content: '';
+            //     //         position: absolute;
+            //     //         top: 0;
+            //     //         left: 0;
+            //     //         width: 1px;
+            //     //         height: 100%;
+            //     //         background: black;
+            //     //     }
+            //     // }
+            // }
             > a {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 102px;
-                padding: 0 50px;
+                padding: 0 45px;
                 font-size: 1.8rem;
                 &:hover {
                     text-decoration: none;
@@ -150,9 +160,8 @@
                         left: 50%;
                         transform: translateX(-50%);
                         width: 0;
-                        height: 2px;
-                        background: $primary;
-                        transition: all 0.3s;
+                        background: $cartiercolor;
+                        transition: all 0.5s;
                     }
                 }
             }
@@ -166,25 +175,25 @@
         right: 0;
         height: 0;
         padding: 0;
-        background: $gray-5;
-        transition: all 0.3s;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 1px;
-            height: 100%;
-            background: $gray-20;
-        }
+        background: transparent;
+        transition: all 0.5s;
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     width: 1px;
+        //     height: 100%;
+        //     background: $cartiercolor;
+        // }
         a {
             display: block;
             padding: 7px 0;
             text-align: center;
-            color: $gray-70;
+            color: $gray-100;
             &:hover {
-                font-weight: $font-bold;
-                color: $gray-90;
+                color: $cartiercolor;
+                transition: all 0.5s;
             }
         }
     }
@@ -194,11 +203,11 @@
     display: flex;
     gap: 15px;
     .lang {
-        display: none;
+        display: block;
         position: relative;
-        @include tabletMore {
-            display: block;
-        }
+        // @include tabletMore {
+        //     display: block;
+        // }
         &.active {
             .lang__btn::after {
                 content: '\f106';
@@ -216,7 +225,7 @@
                 content: '\f107';
                 @include lineAwesome;
                 margin-left: 5px;
-                color: $gray-50;
+                color: $cartiercolor;
             }
         }
         &__lst {
@@ -225,14 +234,14 @@
             top: 52px;
             left: 0;
             width: 90%;
-            border: 1px solid $gray-40;
+            border: 1px solid $cartiercolor;
             background: $white;
             text-align: center;
             li {
                 padding: 5px 0;
                 text-transform: uppercase;
                 &:first-child {
-                    border-bottom: 1px solid $gray-40;
+                    border-bottom: 1px solid $cartiercolor;
                 }
             }
         }
