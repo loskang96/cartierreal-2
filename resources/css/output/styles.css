@@ -128,7 +128,7 @@ body {
   font-size: 1.7rem;
   line-height: 1.5;
   font-family: "Noto Sans KR", sans-serif;
-  color: #1d1d1d;
+  color: #d50032;
   font-weight: 400;
 }
 
@@ -146,7 +146,7 @@ a:active, a:hover {
     text-decoration: none;
   }
   a:active, a:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 address,
@@ -412,7 +412,7 @@ img {
   left: 0;
   right: 0;
   height: 0;
-  background: #ffffff;
+  background: transparent;
   transition: all 0.3s;
 }
 #header .inner {
@@ -532,6 +532,11 @@ img {
   display: block;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .util .lang {
+    display: block;
+  }
+}
 .util .lang.active .lang__btn::after {
   content: "\f106";
   font-family: "Line Awesome Free";
@@ -558,16 +563,12 @@ img {
   top: 52px;
   left: 0;
   width: 90%;
-  border: 1px solid #d50032;
   background: #fff;
   text-align: center;
 }
 .util .lang__lst li {
   padding: 5px 0;
   text-transform: uppercase;
-}
-.util .lang__lst li:first-child {
-  border-bottom: 1px solid #d50032;
 }
 .util .search {
   transform: scaleX(-1);
@@ -592,7 +593,7 @@ img {
   width: 100%;
   height: 100%;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
+  background: #d50032;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   transition: all 0.3s;
@@ -631,8 +632,25 @@ img {
   align-items: center;
   width: 40px;
   height: 40px;
-  background: #e4e4e4;
+  background: #d50032;
   border-radius: 50%;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #header {

@@ -76,7 +76,7 @@
         left: 0;
         right: 0;
         height: 0;
-        background: $gray-0;
+        background: transparent;
         transition: all 0.3s;
     }
     .inner {
@@ -205,9 +205,9 @@
     .lang {
         display: block;
         position: relative;
-        // @include tabletMore {
-        //     display: block;
-        // }
+        @include tabletMore {
+            display: block;
+        }
         &.active {
             .lang__btn::after {
                 content: '\f106';
@@ -234,15 +234,15 @@
             top: 52px;
             left: 0;
             width: 90%;
-            border: 1px solid $cartiercolor;
+            // border: 1px solid $cartiercolor;
             background: $white;
             text-align: center;
             li {
                 padding: 5px 0;
                 text-transform: uppercase;
-                &:first-child {
-                    border-bottom: 1px solid $cartiercolor;
-                }
+                // &:first-child {
+                //     // border-bottom: 1px solid $cartiercolor;
+                // }
             }
         }
     }
@@ -271,7 +271,7 @@
     width: 100%;
     height: 100%;
     padding: $p-mobile;
-    background: rgba(255, 255, 255, 0.9);
+    background: $cartiercolor;
     backdrop-filter: blur(10px);
     transition: all 0.3s;
     &.active {
@@ -305,7 +305,7 @@
             align-items: center;
             width: 40px;
             height: 40px;
-            background: $gray-20;
+            background: $cartiercolor;
             border-radius: 50%;
         }
     }
