@@ -30,11 +30,11 @@
     margin-top: 10%;
     margin-bottom: 25%;
     letter-spacing: -1px;
-    opacity: 0.7;
+    // opacity: 0;
     @include ff-lora;
     @include mobileMore {
         font-size: 28vw;
-        margin-top: 15%;
+        margin-top: 28%;
         margin-bottom: 60%;
     }
     @include tabletMore {
@@ -78,8 +78,8 @@
             }
             @include tabletMore {
                 position: relative;
-                width: 63%;
-                height: 80vh;
+                width: 70%;
+                height: 75vh;
                 margin-bottom: 0;
             }
         }
@@ -152,6 +152,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            object-fit: cover;
             @include mobileMore {
                 display: flex;
                 flex-wrap: wrap;
@@ -168,7 +169,7 @@
                 }
             }
             @include tabletMore {
-                max-width: 910px;
+                width: 65%;
             }
             .sec-g__img {
                 border-radius: 18px;

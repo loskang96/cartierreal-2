@@ -128,7 +128,7 @@ body {
   font-size: 1.7rem;
   line-height: 1.5;
   font-family: "Noto Sans KR", sans-serif;
-  color: #fff;
+  color: #000;
   font-weight: 400;
 }
 
@@ -666,13 +666,12 @@ img {
   margin-top: 10%;
   margin-bottom: 25%;
   letter-spacing: -1px;
-  opacity: 0.7;
   font-family: "Lora", sans-serif;
 }
 @media (min-width: 600px) {
   .intro {
     font-size: 28vw;
-    margin-top: 15%;
+    margin-top: 28%;
     margin-bottom: 60%;
   }
 }
@@ -726,8 +725,8 @@ img {
 @media (min-width: 1024px) {
   .sec-cartier .sec-g__cont .sec-g__img {
     position: relative;
-    width: 63%;
-    height: 80vh;
+    width: 70%;
+    height: 75vh;
     margin-bottom: 0;
   }
 }
@@ -814,6 +813,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 600px) {
   .sec-cartier2 .sec-g__cont .lst-cartier2 {
@@ -832,7 +833,7 @@ img {
 }
 @media (min-width: 1024px) {
   .sec-cartier2 .sec-g__cont .lst-cartier2 {
-    max-width: 910px;
+    width: 65%;
   }
 }
 .sec-cartier2 .sec-g__cont .lst-cartier2 .sec-g__img {
