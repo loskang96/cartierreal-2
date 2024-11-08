@@ -33,3 +33,33 @@ gsap.fromTo(
         },
     }
 );
+gsap.to('.sec-g__img', {
+    yPercent: 25, // y축으로 50% 이동
+    ease: 'none',
+    scrollTrigger: {
+        trigger: '.sec-g__img', // 트리거 요소 설정
+        start: 'top bottom', // 시작 위치
+        end: 'bottom top', // 끝 위치
+        scrub: 1, // 스크롤에 따라 자연스럽게 이동
+    },
+});
+gsap.to('.sec-g__tit', {
+    yPercent: 100, // y축으로 50% 이동
+    ease: 'none',
+    scrollTrigger: {
+        trigger: '.sec-g__tit', // 트리거 요소 설정
+        start: 'top bottom', // 시작 위치
+        end: 'bottom top', // 끝 위치
+        scrub: 1, // 스크롤에 따라 자연스럽게 이동
+    },
+});
+gsap.to('.sec-g__tit', {
+    yPercent: 100, // y축으로 50% 이동
+    ease: 'none',
+    scrollTrigger: {
+        trigger: '.sec-g__tit', // 트리거 요소 설정
+        start: 'top bottom', // 시작 위치
+        end: 'bottom top', // 끝 위치
+        scrub: 1, // 스크롤에 따라 자연스럽게 이동
+    },
+});
