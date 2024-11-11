@@ -696,7 +696,7 @@ img {
 @media (min-width: 1024px) {
   .sec-cartier .sec-g__tit {
     position: absolute;
-    top: -35%;
+    top: 10%;
     left: 20px;
     z-index: 10;
     font-size: 10vw;

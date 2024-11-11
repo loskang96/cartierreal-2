@@ -34,7 +34,7 @@ gsap.fromTo(
     }
 );
 gsap.to('.sec-cartier .sec-g__img', {
-    yPercent: 25, // y축으로 50% 이동
+    yPercent: -35, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier .sec-g__img', // 트리거 요소 설정
@@ -44,7 +44,7 @@ gsap.to('.sec-cartier .sec-g__img', {
     },
 });
 gsap.to('.sec-cartier .sec-g__tit', {
-    yPercent: 100, // y축으로 50% 이동
+    yPercent: -200, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier .sec-g__tit', // 트리거 요소 설정
@@ -54,7 +54,7 @@ gsap.to('.sec-cartier .sec-g__tit', {
     },
 });
 gsap.to('.sec-cartier .sec-g__in', {
-    yPercent: 90, // y축으로 50% 이동
+    yPercent: -90, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier .sec-g__in', // 트리거 요소 설정
@@ -64,7 +64,7 @@ gsap.to('.sec-cartier .sec-g__in', {
     },
 });
 gsap.to('.sec-cartier2 .sec-g__tit', {
-    yPercent: 100, // y축으로 50% 이동
+    yPercent: -100, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier2 .sec-g__tit', // 트리거 요소 설정
@@ -74,7 +74,7 @@ gsap.to('.sec-cartier2 .sec-g__tit', {
     },
 });
 gsap.to('.sec-cartier2 .sec-g__desc', {
-    yPercent: 100, // y축으로 50% 이동
+    yPercent: -100, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier2 .sec-g__desc', // 트리거 요소 설정
@@ -84,7 +84,7 @@ gsap.to('.sec-cartier2 .sec-g__desc', {
     },
 });
 gsap.to('.sec-cartier2 .lst-cartier2', {
-    yPercent: 10, // y축으로 50% 이동
+    yPercent: -10, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier2 .lst-cartier2', // 트리거 요소 설정
@@ -94,7 +94,7 @@ gsap.to('.sec-cartier2 .lst-cartier2', {
     },
 });
 gsap.to('.sec-cartier3 .sec-g__tit', {
-    yPercent: 50, // y축으로 50% 이동
+    yPercent: -50, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier3 .sec-g__tit', // 트리거 요소 설정
@@ -104,7 +104,7 @@ gsap.to('.sec-cartier3 .sec-g__tit', {
     },
 });
 gsap.to('.sec-cartier3 .lst-cartier3', {
-    yPercent: 3, // y축으로 50% 이동
+    yPercent: -3, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier3 .lst-cartier3', // 트리거 요소 설정
@@ -114,7 +114,7 @@ gsap.to('.sec-cartier3 .lst-cartier3', {
     },
 });
 gsap.to('.sec-cartier4 .sec-g__tit', {
-    yPercent: 100, // y축으로 50% 이동
+    yPercent: -100, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier4 .sec-g__tit', // 트리거 요소 설정
