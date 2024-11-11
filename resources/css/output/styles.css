@@ -682,6 +682,9 @@ img {
   }
 }
 
+.sec-cartier {
+  overflow: visible;
+}
 .sec-cartier .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;
@@ -762,6 +765,9 @@ img {
   }
 }
 
+.sec-cartier2 {
+  overflow: visible;
+}
 .sec-cartier2 .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;
@@ -778,7 +784,7 @@ img {
     display: grid;
     justify-content: end;
     font-size: 10vw;
-    margin-bottom: 10%;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -861,6 +867,9 @@ img {
   }
 }
 
+.sec-cartier3 {
+  overflow: visible;
+}
 .sec-cartier3 .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;
@@ -945,6 +954,9 @@ img {
   }
 }
 
+.sec-cartier4 {
+  overflow: visible;
+}
 .sec-cartier4 .sec-g__tit {
   font-size: 15vw;
   font-weight: 400;

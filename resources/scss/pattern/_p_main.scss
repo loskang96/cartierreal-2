@@ -44,6 +44,7 @@
 }
 
 .sec-cartier {
+    overflow: visible;
     .sec-g__tit {
         font-size: 15vw;
         font-weight: 400;
@@ -112,6 +113,7 @@
 }
 
 .sec-cartier2 {
+    overflow: visible;
     .sec-g__tit {
         font-size: 15vw;
         font-weight: 400;
@@ -125,7 +127,7 @@
             display: grid;
             justify-content: end;
             font-size: 10vw;
-            margin-bottom: 10%;
+            margin-bottom: 0;
         }
     }
     .sec-g__cont {
@@ -195,6 +197,7 @@
 }
 
 .sec-cartier3 {
+    overflow: visible;
     .sec-g__tit {
         font-size: 15vw;
         font-weight: 400;
@@ -268,6 +271,7 @@
 }
 
 .sec-cartier4 {
+    overflow: visible;
     .sec-g__tit {
         font-size: 15vw;
         font-weight: 400;
