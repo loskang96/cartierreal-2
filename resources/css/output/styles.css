@@ -838,31 +838,81 @@ img {
     width: 65%;
   }
 }
-.sec-cartier2 .sec-g__cont .lst-cartier2 .sec-g__img {
+.sec-cartier2 .sec-g__cont .sec-g__link {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: background 0.7s;
+  background-image: url("/resources/images/component/common/lovering.avif");
+  background-size: cover; /* 이미지가 요소를 가득 채우도록 설정 */
+  background-position: center; /* 백그라운드 이미지 전환 */
+}
+.sec-cartier2 .sec-g__cont .sec-g__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Lora", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  background: #d50032;
+  opacity: 0; /* 기본 상태에서는 숨김 */
+  transition: opacity 0.7s;
   border-radius: 18px;
 }
 @media (min-width: 600px) {
-  .sec-cartier2 .sec-g__cont .lst-cartier2 .sec-g__img {
+  .sec-cartier2 .sec-g__cont .sec-g__hover {
     height: 460px;
   }
 }
 @media (min-width: 1024px) {
-  .sec-cartier2 .sec-g__cont .lst-cartier2 .sec-g__img {
+  .sec-cartier2 .sec-g__cont .sec-g__hover {
     height: 700px;
   }
 }
-.sec-cartier2 .sec-g__cont .lst-cartier2 .sec-g__img2 {
+.sec-cartier2 .sec-g__cont .sec-g__link:hover {
+  background-image: url(""); /* 마우스 오버 시 변경할 백그라운드 이미지 */
+}
+.sec-cartier2 .sec-g__cont .sec-g__link:hover .sec-g__hover {
+  opacity: 1; /* 마우스 오버 시 텍스트 표시 */
+}
+.sec-cartier2 .sec-g__cont .sec-g__img {
   border-radius: 18px;
 }
 @media (min-width: 600px) {
-  .sec-cartier2 .sec-g__cont .lst-cartier2 .sec-g__img2 {
+  .sec-cartier2 .sec-g__cont .sec-g__img {
+    height: 460px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-cartier2 .sec-g__cont .sec-g__img {
+    height: 700px;
+  }
+}
+.sec-cartier2 .sec-g__cont .sec-g__img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+}
+@media (min-width: 600px) {
+  .sec-cartier2 .sec-g__cont .sec-g__img2 {
     -o-object-fit: cover;
        object-fit: cover;
     height: 460px;
   }
 }
 @media (min-width: 1024px) {
-  .sec-cartier2 .sec-g__cont .lst-cartier2 .sec-g__img2 {
+  .sec-cartier2 .sec-g__cont .sec-g__img2 {
     height: 700px;
   }
 }
@@ -897,6 +947,8 @@ img {
      object-fit: cover;
   border-radius: 18px;
   margin-bottom: 7%;
+  transition: 0.3 ease;
+  filter: brightness(70%);
 }
 @media (min-width: 1024px) {
   .sec-cartier3 .lst-cartier3 li .sec-g__img {
@@ -904,11 +956,16 @@ img {
     height: 100vh;
   }
 }
+.sec-cartier3 .lst-cartier3 li .sec-g__img .sec-g__img:hover {
+  filter: brightness(100%) !important;
+}
 .sec-cartier3 .lst-cartier3 li .sec-g__img4 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 18px;
   margin-bottom: 7%;
+  transition: 0.3 ease;
+  opacity: 0.7;
 }
 @media (min-width: 1024px) {
   .sec-cartier3 .lst-cartier3 li .sec-g__img4 {
@@ -916,6 +973,9 @@ img {
     height: 100vh;
     margin-bottom: 0;
   }
+}
+.sec-cartier3 .lst-cartier3 li .sec-g__img4 .sec-g__img4:hover {
+  opacity: 1 !important;
 }
 .sec-cartier3 .txt-area {
   display: flex;
