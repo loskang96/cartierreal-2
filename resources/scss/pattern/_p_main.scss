@@ -265,66 +265,79 @@
     }
     .lst-cartier3 li {
         position: relative;
+
         .sec-g__img {
             object-fit: cover;
             border-radius: 18px;
             margin-bottom: 7%;
-            transition: 0.3 ease;
+            transition: filter 0.3s ease; // transition 속성을 구체적으로 명시
             filter: brightness(70%);
+
             @include tabletMore {
                 width: 100%;
                 height: 100vh;
             }
-            .sec-g__img:hover {
+
+            &:hover {
+                // :hover를 중첩으로 정의
                 filter: brightness(100%) !important;
             }
         }
+
         .sec-g__img4 {
             object-fit: cover;
             border-radius: 18px;
             margin-bottom: 7%;
-            transition: 0.3 ease;
+            transition: opacity 0.3s ease; // transition 속성을 구체적으로 명시
             opacity: 0.7;
+
             @include tabletMore {
                 width: 100%;
                 height: 100vh;
                 margin-bottom: 0;
             }
-            .sec-g__img4:hover {
+
+            &:hover {
+                // :hover를 중첩으로 정의
                 opacity: 1 !important;
             }
         }
-    }
-    .txt-area {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        position: absolute;
-        top: 0;
-        bottom: 18%;
-        margin-left: 3%;
-    }
-    .title {
-        font-family: 'Montserrat', sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 4.5vw;
-        color: $white;
-        line-height: 130%;
-        margin-bottom: 3%;
-        @include tabletMore {
-            font-size: 3.5vw;
+
+        .txt-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: absolute;
+            top: 0;
+            bottom: 18%;
+            margin-left: 3%;
         }
-    }
-    .desc {
-        font-size: 2vw;
-        font-weight: 300;
-        line-height: 160%;
-        color: $white;
-        @include tabletMore {
-            font-size: 1.5vw;
-            margin-bottom: 12%;
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 4.5vw;
+            color: $white;
+            line-height: 130%;
+            margin-bottom: 3%;
+
+            @include tabletMore {
+                font-size: 3.5vw;
+            }
+        }
+
+        .desc {
+            font-size: 2vw;
+            font-weight: 300;
+            line-height: 160%;
+            color: $white;
+
+            @include tabletMore {
+                font-size: 1.5vw;
+                margin-bottom: 12%;
+            }
         }
     }
 }

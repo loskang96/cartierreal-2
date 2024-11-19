@@ -947,7 +947,7 @@ img {
      object-fit: cover;
   border-radius: 18px;
   margin-bottom: 7%;
-  transition: 0.3 ease;
+  transition: filter 0.3s ease;
   filter: brightness(70%);
 }
 @media (min-width: 1024px) {
@@ -956,7 +956,7 @@ img {
     height: 100vh;
   }
 }
-.sec-cartier3 .lst-cartier3 li .sec-g__img .sec-g__img:hover {
+.sec-cartier3 .lst-cartier3 li .sec-g__img:hover {
   filter: brightness(100%) !important;
 }
 .sec-cartier3 .lst-cartier3 li .sec-g__img4 {
@@ -964,7 +964,7 @@ img {
      object-fit: cover;
   border-radius: 18px;
   margin-bottom: 7%;
-  transition: 0.3 ease;
+  transition: opacity 0.3s ease;
   opacity: 0.7;
 }
 @media (min-width: 1024px) {
@@ -974,10 +974,10 @@ img {
     margin-bottom: 0;
   }
 }
-.sec-cartier3 .lst-cartier3 li .sec-g__img4 .sec-g__img4:hover {
+.sec-cartier3 .lst-cartier3 li .sec-g__img4:hover {
   opacity: 1 !important;
 }
-.sec-cartier3 .txt-area {
+.sec-cartier3 .lst-cartier3 li .txt-area {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -986,7 +986,7 @@ img {
   bottom: 18%;
   margin-left: 3%;
 }
-.sec-cartier3 .title {
+.sec-cartier3 .lst-cartier3 li .title {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -997,18 +997,18 @@ img {
   margin-bottom: 3%;
 }
 @media (min-width: 1024px) {
-  .sec-cartier3 .title {
+  .sec-cartier3 .lst-cartier3 li .title {
     font-size: 3.5vw;
   }
 }
-.sec-cartier3 .desc {
+.sec-cartier3 .lst-cartier3 li .desc {
   font-size: 2vw;
   font-weight: 300;
   line-height: 160%;
   color: #fff;
 }
 @media (min-width: 1024px) {
-  .sec-cartier3 .desc {
+  .sec-cartier3 .lst-cartier3 li .desc {
     font-size: 1.5vw;
     margin-bottom: 12%;
   }
