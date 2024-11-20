@@ -663,22 +663,25 @@ img {
 .intro {
   font-size: 21vw;
   font-weight: 400;
-  margin-top: 10%;
-  margin-bottom: 25%;
+  margin-top: 177%;
+  margin-bottom: 50%;
   letter-spacing: -1px;
+  position: relative;
+  will-change: transform;
   font-family: "Lora", sans-serif;
 }
 @media (min-width: 600px) {
   .intro {
     font-size: 28vw;
-    margin-top: 28%;
-    margin-bottom: 60%;
+    margin-top: 105%;
+    margin-bottom: 50%;
   }
 }
 @media (min-width: 1024px) {
   .intro {
     font-size: 15vw;
-    margin-bottom: 15%;
+    margin-top: 29%;
+    margin-bottom: 7%;
   }
 }
 
@@ -686,9 +689,11 @@ img {
   overflow: visible;
 }
 .sec-cartier .sec-g__tit {
+  position: relative;
+  will-change: transform;
   font-size: 15vw;
   font-weight: 400;
-  margin-bottom: 8%;
+  margin-bottom: 0;
 }
 @media (min-width: 600px) {
   .sec-cartier .sec-g__tit {
@@ -715,6 +720,8 @@ img {
   }
 }
 .sec-cartier .sec-g__cont .sec-g__img {
+  position: relative;
+  will-change: transform;
   border-radius: 18px;
   margin-bottom: 10%;
   -o-object-fit: cover;
@@ -799,6 +806,8 @@ img {
   font-weight: normal;
   font-size: 4vw;
   margin-bottom: 15%;
+  position: relative;
+  will-change: transform;
 }
 @media (min-width: 600px) {
   .sec-cartier2 .sec-g__cont .sec-g__desc {
@@ -939,6 +948,10 @@ img {
     margin-bottom: 11%;
   }
 }
+.sec-cartier3 .lst-cartier3 {
+  position: relative;
+  will-change: transform;
+}
 .sec-cartier3 .lst-cartier3 li {
   position: relative;
 }
@@ -1023,6 +1036,8 @@ img {
   line-height: 100%;
   margin-top: 11%;
   margin-bottom: 10%;
+  position: relative;
+  will-change: transform;
 }
 @media (min-width: 600px) {
   .sec-cartier4 .sec-g__tit {

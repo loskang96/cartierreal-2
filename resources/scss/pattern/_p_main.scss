@@ -27,28 +27,33 @@
 .intro {
     font-size: 21vw;
     font-weight: 400;
-    margin-top: 10%;
-    margin-bottom: 25%;
+    margin-top: 177%;
+    margin-bottom: 50%;
     letter-spacing: -1px;
+    position: relative;
+    will-change: transform;
     // opacity: 0;
     @include ff-lora;
     @include mobileMore {
         font-size: 28vw;
-        margin-top: 28%;
-        margin-bottom: 60%;
+        margin-top: 105%;
+        margin-bottom: 50%;
     }
     @include tabletMore {
         font-size: 15vw;
-        margin-bottom: 15%;
+        margin-top: 29%;
+        margin-bottom: 7%;
     }
 }
 
 .sec-cartier {
     overflow: visible;
     .sec-g__tit {
+        position: relative;
+        will-change: transform;
         font-size: 15vw;
         font-weight: 400;
-        margin-bottom: 8%;
+        margin-bottom: 0;
         // opacity: 0.7;
         @include mobileMore {
             font-size: 18vw;
@@ -71,6 +76,8 @@
             align-items: center;
         }
         .sec-g__img {
+            position: relative;
+            will-change: transform;
             border-radius: 18px;
             margin-bottom: 10%;
             object-fit: cover;
@@ -141,6 +148,8 @@
             font-weight: normal;
             font-size: 4vw;
             margin-bottom: 15%;
+            position: relative;
+            will-change: transform;
             // opacity: 0.7;
             @include mobileMore {
                 display: block;
@@ -263,80 +272,84 @@
             margin-bottom: 11%;
         }
     }
-    .lst-cartier3 li {
+    .lst-cartier3 {
         position: relative;
+        will-change: transform;
+        li {
+            position: relative;
 
-        .sec-g__img {
-            object-fit: cover;
-            border-radius: 18px;
-            margin-bottom: 7%;
-            transition: filter 0.3s ease; // transition 속성을 구체적으로 명시
-            filter: brightness(70%);
+            .sec-g__img {
+                object-fit: cover;
+                border-radius: 18px;
+                margin-bottom: 7%;
+                transition: filter 0.3s ease; // transition 속성을 구체적으로 명시
+                filter: brightness(70%);
 
-            @include tabletMore {
-                width: 100%;
-                height: 100vh;
+                @include tabletMore {
+                    width: 100%;
+                    height: 100vh;
+                }
+
+                &:hover {
+                    // :hover를 중첩으로 정의
+                    filter: brightness(100%) !important;
+                }
             }
 
-            &:hover {
-                // :hover를 중첩으로 정의
-                filter: brightness(100%) !important;
+            .sec-g__img4 {
+                object-fit: cover;
+                border-radius: 18px;
+                margin-bottom: 7%;
+                transition: opacity 0.3s ease; // transition 속성을 구체적으로 명시
+                opacity: 0.7;
+
+                @include tabletMore {
+                    width: 100%;
+                    height: 100vh;
+                    margin-bottom: 0;
+                }
+
+                &:hover {
+                    // :hover를 중첩으로 정의
+                    opacity: 1 !important;
+                }
             }
-        }
 
-        .sec-g__img4 {
-            object-fit: cover;
-            border-radius: 18px;
-            margin-bottom: 7%;
-            transition: opacity 0.3s ease; // transition 속성을 구체적으로 명시
-            opacity: 0.7;
-
-            @include tabletMore {
-                width: 100%;
-                height: 100vh;
-                margin-bottom: 0;
+            .txt-area {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                position: absolute;
+                top: 0;
+                bottom: 18%;
+                margin-left: 3%;
             }
 
-            &:hover {
-                // :hover를 중첩으로 정의
-                opacity: 1 !important;
+            .title {
+                font-family: 'Montserrat', sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 4.5vw;
+                color: $white;
+                line-height: 130%;
+                margin-bottom: 3%;
+
+                @include tabletMore {
+                    font-size: 3.5vw;
+                }
             }
-        }
 
-        .txt-area {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            position: absolute;
-            top: 0;
-            bottom: 18%;
-            margin-left: 3%;
-        }
+            .desc {
+                font-size: 2vw;
+                font-weight: 300;
+                line-height: 160%;
+                color: $white;
 
-        .title {
-            font-family: 'Montserrat', sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
-            font-size: 4.5vw;
-            color: $white;
-            line-height: 130%;
-            margin-bottom: 3%;
-
-            @include tabletMore {
-                font-size: 3.5vw;
-            }
-        }
-
-        .desc {
-            font-size: 2vw;
-            font-weight: 300;
-            line-height: 160%;
-            color: $white;
-
-            @include tabletMore {
-                font-size: 1.5vw;
-                margin-bottom: 12%;
+                @include tabletMore {
+                    font-size: 1.5vw;
+                    margin-bottom: 12%;
+                }
             }
         }
     }
@@ -350,7 +363,8 @@
         line-height: 100%;
         margin-top: 11%;
         margin-bottom: 10%;
-        // opacity: 0.7;
+        position: relative;
+        will-change: transform;
         @include mobileMore {
             margin-top: 23%;
         }
