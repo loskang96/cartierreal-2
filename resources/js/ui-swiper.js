@@ -43,7 +43,7 @@ gsap.matchMedia().add(
     '(min-width: 1024px)',
     () => {
         gsap.to('.sec-cartier .sec-g__img', {
-            y: -100, // y축으로 50% 이동
+            y: -10000,
             ease: 'none',
             scrollTrigger: {
                 trigger: '.sec-cartier .sec-g__img', // 트리거 요소 설정

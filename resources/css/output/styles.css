@@ -674,7 +674,7 @@ img {
   .intro {
     font-size: 28vw;
     margin-top: 105%;
-    margin-bottom: 50%;
+    margin-bottom: 55%;
   }
 }
 @media (min-width: 1024px) {
@@ -687,9 +687,13 @@ img {
 
 .sec-cartier {
   overflow: visible;
+  position: relative;
 }
 .sec-cartier .sec-g__tit {
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  top: 100;
+  left: 20;
   will-change: transform;
   font-size: 15vw;
   font-weight: 400;
@@ -724,11 +728,13 @@ img {
   will-change: transform;
   border-radius: 18px;
   margin-bottom: 10%;
+  height: 25vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (min-width: 600px) {
   .sec-cartier .sec-g__cont .sec-g__img {
+    height: 45vh;
     margin-bottom: 5%;
   }
 }
