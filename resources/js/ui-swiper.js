@@ -101,7 +101,7 @@ gsap.to('.sec-cartier2 .sec-g__desc', {
     },
 });
 gsap.to('.sec-cartier2 .lst-cartier2', {
-    y: -250, // y축으로 50% 이동
+    y: -600, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier2 .lst-cartier2', // 트리거 요소 설정
@@ -112,7 +112,7 @@ gsap.to('.sec-cartier2 .lst-cartier2', {
     },
 });
 gsap.to('.sec-cartier3 .sec-g__tit', {
-    y: -300, // y축으로 50% 이동
+    y: -500, // y축으로 50% 이동
     ease: 'none',
     scrollTrigger: {
         trigger: '.sec-cartier3 .sec-g__tit', // 트리거 요소 설정

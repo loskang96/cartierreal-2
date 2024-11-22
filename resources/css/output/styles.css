@@ -298,8 +298,8 @@ img {
 }
 .swiper .swiper-slide img {
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
   -o-object-fit: cover;
      object-fit: cover;
 }
