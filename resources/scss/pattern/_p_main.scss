@@ -132,7 +132,6 @@
         font-weight: 400;
         line-height: 100%;
         margin-bottom: 3%;
-        // opacity: 0.7;
         @include mobileMore {
             margin-bottom: 5%;
         }
@@ -156,7 +155,6 @@
             margin-bottom: 15%;
             position: relative;
             will-change: transform;
-            // opacity: 0.7;
             @include mobileMore {
                 display: block;
                 margin-bottom: 10%;
@@ -170,6 +168,7 @@
             flex-direction: column;
             gap: 20px;
             object-fit: cover;
+
             @include mobileMore {
                 display: flex;
                 flex-wrap: wrap;
@@ -177,6 +176,13 @@
                 justify-content: space-between;
                 li {
                     width: 45%;
+                    object-fit: cover;
+                    @include mobileMore {
+                        height: 460px;
+                    }
+                    @include tabletMore {
+                        height: 700px;
+                    }
                     &:nth-child(2n) {
                         a {
                             display: block;
@@ -195,7 +201,7 @@
             overflow: hidden;
             border-radius: 18px;
             transition: background 0.7s;
-            background-image: url('/resources/images/component/common/lovering.avif');
+            // background-image: url('/resources/images/component/common/lovering.avif');
             background-size: cover; /* 이미지가 요소를 가득 채우도록 설정 */
             background-position: center; /* 백그라운드 이미지 전환 */
         }
@@ -220,12 +226,6 @@
             opacity: 0; /* 기본 상태에서는 숨김 */
             transition: opacity 0.7s;
             border-radius: 18px;
-            @include mobileMore {
-                height: 460px;
-            }
-            @include tabletMore {
-                height: 700px;
-            }
         }
         .sec-g__link:hover {
             background-image: url(''); /* 마우스 오버 시 변경할 백그라운드 이미지 */
@@ -238,23 +238,22 @@
             // object-fit: cover;
             border-radius: 18px;
             @include mobileMore {
-                height: 460px;
+                aspect-ratio: 9 / 10;
             }
             @include tabletMore {
-                height: 700px;
+                aspect-ratio: 9 / 12;
             }
         }
 
         .sec-g__img2 {
             object-fit: cover;
             border-radius: 18px;
-
             @include mobileMore {
                 object-fit: cover;
-                height: 460px;
+                aspect-ratio: 9 / 10;
             }
             @include tabletMore {
-                height: 700px;
+                aspect-ratio: 9/ 12;
             }
         }
     }

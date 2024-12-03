@@ -842,7 +842,21 @@ img {
   }
   .sec-cartier2 .sec-g__cont .lst-cartier2 li {
     width: 45%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
+}
+@media (min-width: 600px) and (min-width: 600px) {
+  .sec-cartier2 .sec-g__cont .lst-cartier2 li {
+    height: 460px;
+  }
+}
+@media (min-width: 600px) and (min-width: 1024px) {
+  .sec-cartier2 .sec-g__cont .lst-cartier2 li {
+    height: 700px;
+  }
+}
+@media (min-width: 600px) {
   .sec-cartier2 .sec-g__cont .lst-cartier2 li:nth-child(2n) a {
     display: block;
     margin-top: 45%;
@@ -859,7 +873,6 @@ img {
   overflow: hidden;
   border-radius: 18px;
   transition: background 0.7s;
-  background-image: url("/resources/images/component/common/lovering.avif");
   background-size: cover; /* 이미지가 요소를 가득 채우도록 설정 */
   background-position: center; /* 백그라운드 이미지 전환 */
 }
@@ -885,16 +898,6 @@ img {
   transition: opacity 0.7s;
   border-radius: 18px;
 }
-@media (min-width: 600px) {
-  .sec-cartier2 .sec-g__cont .sec-g__hover {
-    height: 460px;
-  }
-}
-@media (min-width: 1024px) {
-  .sec-cartier2 .sec-g__cont .sec-g__hover {
-    height: 700px;
-  }
-}
 .sec-cartier2 .sec-g__cont .sec-g__link:hover {
   background-image: url(""); /* 마우스 오버 시 변경할 백그라운드 이미지 */
 }
@@ -906,12 +909,12 @@ img {
 }
 @media (min-width: 600px) {
   .sec-cartier2 .sec-g__cont .sec-g__img {
-    height: 460px;
+    aspect-ratio: 9/10;
   }
 }
 @media (min-width: 1024px) {
   .sec-cartier2 .sec-g__cont .sec-g__img {
-    height: 700px;
+    aspect-ratio: 9/12;
   }
 }
 .sec-cartier2 .sec-g__cont .sec-g__img2 {
@@ -923,12 +926,12 @@ img {
   .sec-cartier2 .sec-g__cont .sec-g__img2 {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 460px;
+    aspect-ratio: 9/10;
   }
 }
 @media (min-width: 1024px) {
   .sec-cartier2 .sec-g__cont .sec-g__img2 {
-    height: 700px;
+    aspect-ratio: 9/12;
   }
 }
 
